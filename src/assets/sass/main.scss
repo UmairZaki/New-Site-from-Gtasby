@@ -315,12 +315,13 @@
 		}
 
 		@include breakpoint('<=medium') {
-			width: 80% !important;
+			width: 60% !important;
 			max-width: 100% !important;
 		}
 
-		@include breakpoint('<=xsmall') {
-			width: 100% !important;
+		@include breakpoint('<=small') {
+			width: 80% !important;
+			max-width: 100% !important;
 		}
 	}
 
@@ -1342,10 +1343,10 @@
 
 /* Medium */
 
-	@include breakpoint('<=medium') {
+	// @include breakpoint('<=medium') {
 
-		$size-padding-tb: 3em;
-		$size-padding-lr: 3em;
+		// $size-padding-tb: 3em;
+		// $size-padding-lr: 3em;
 
 		/* Main BG */
 
@@ -1372,36 +1373,36 @@
 
 		/* Header */
 
-			#header {
-				header {
-					padding-bottom: (_size(element-height) + ($size-padding-lr * 2));
-					width: 80%;
-				}
+			// #header {
+			// 	header {
+			// 		padding-bottom: (_size(element-height) + ($size-padding-lr * 2));
+			// 		width: 80%;
+			// 	}
 
-				.container {
-					margin-left: -40%;
-					padding: $size-padding-lr;
-				}
-			}
+			// 	.container {
+			// 		margin-left: -40%;
+			// 		padding: $size-padding-lr;
+			// 	}
+			// }
 
 		/* Footer */
 
-			#footer {
-				min-height: 0;
-				padding: 0;
+	// 		#footer {
+	// 			min-height: 0;
+	// 			padding: 0;
 
-				.container {
-					@include padding($size-padding-tb, $size-padding-lr);
-				}
+	// 			.container {
+	// 				@include padding($size-padding-tb, $size-padding-lr);
+	// 			}
 
-				footer {
-					@include padding($size-padding-tb, $size-padding-lr);
-					bottom: auto;
-					position: relative;
-				}
-			}
+	// 			footer {
+	// 				@include padding($size-padding-tb, $size-padding-lr);
+	// 				bottom: auto;
+	// 				position: relative;
+	// 			}
+	// 		}
 
-	}
+	// }
 
 /* Small */
 
@@ -1606,7 +1607,7 @@
 	color: rgb(255, 255, 64);
 	font-size: 1.8em;
 	@include breakpoint('<=small'){
-		font-size: 1.2em;
+		font-size: 1em;
 	}
 	
 }
@@ -1616,7 +1617,7 @@
 		font-size: 1.6em !important;
 		font-weight: 500;
 		@include breakpoint('<=small'){
-			font-size: 1em;
+			font-size: 0.8em;
 		}
 	}
 	
