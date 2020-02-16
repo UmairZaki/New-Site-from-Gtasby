@@ -29,7 +29,7 @@
 	}
 
 	$size-padding-tb: 5em;
-	$size-padding-lr: 2.5em;
+	$size-padding-lr: 2em;
 
 // Reset.
 // Based on meyerweb.com/eric/tools/css/reset (v2.0 | 20110126 | License: public domain)
@@ -295,33 +295,41 @@
 		}
 
 		&.small {
-			width: (_size(container-width) * 0.5);
+			width: (_size(container-width) * 0.4);
 		}
 
 		&.medium {
-			width: (_size(container-width) * 0.75);
+			width: (_size(container-width) * 0.6);
 		}
 
 		&.large {
-			width: (_size(container-width) * 1.25);
+			width: (_size(container-width) * 1);
 		}
 
 		&.xlarge {
-			width: (_size(container-width) * 1.5);
+			width: (_size(container-width) * 1.25);
 		}
 
 		&.max {
 			width: 100%;
 		}
-
+        @include breakpoint('<=large') {
+			width: 40% !important;
+			max-width: 100% !important;
+			$size-padding-tb: 4em;
+	        $size-padding-lr: 2.5em;
+		}
 		@include breakpoint('<=medium') {
 			width: 60% !important;
 			max-width: 100% !important;
+			$size-padding-tb: 4em;
+	        $size-padding-lr: 2.5em;
 		}
 
 		@include breakpoint('<=small') {
-			width: 80% !important;
+			width: 70% !important;
 			max-width: 100% !important;
+			padding: 3em 1em;
 		}
 	}
 
@@ -1597,7 +1605,10 @@
 		display: block;
 		width: 30vw;
 		@include breakpoint('<=small'){
-			width: 60vw;
+			width: 50vw;
+		}
+		@include breakpoint('<=medium'){
+			width: 50vw;
 		}
 		
 	}
