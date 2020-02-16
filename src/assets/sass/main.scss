@@ -314,7 +314,7 @@
 			width: 100%;
 		}
         @include breakpoint('<=large') {
-			width: 40% !important;
+			width: 35% !important;
 			max-width: 100% !important;
 			$size-padding-tb: 4em;
 	        $size-padding-lr: 2.5em;
@@ -329,7 +329,8 @@
 		@include breakpoint('<=small') {
 			width: 70% !important;
 			max-width: 100% !important;
-			padding: 3em 1em;
+			$size-padding-tb: 3em;
+	        $size-padding-lr: 1em;
 		}
 	}
 
@@ -935,43 +936,43 @@
 			}
 		}
 
-		@include breakpoint('<=xsmall') {
-			&:not(.fixed) {
-				@include vendor('flex-direction', 'column');
-				margin-left: 0;
-				width: 100% !important;
+		// @include breakpoint('<=xsmall') {
+		// 	&:not(.fixed) {
+		// 		@include vendor('flex-direction', 'column');
+		// 		margin-left: 0;
+		// 		width: 100% !important;
 
-				li {
-					@include vendor('flex-grow', '1');
-					@include vendor('flex-shrink', '1');
-					padding: (_size(element-margin) * 0.5) 0 0 0;
-					text-align: center;
-					width: 100%;
+		// 		li {
+		// 			@include vendor('flex-grow', '1');
+		// 			@include vendor('flex-shrink', '1');
+		// 			padding: (_size(element-margin) * 0.5) 0 0 0;
+		// 			text-align: center;
+		// 			width: 100%;
 
-					> * {
-						width: 100%;
-					}
+		// 			> * {
+		// 				width: 100%;
+		// 			}
 
-					&:first-child {
-						padding-top: 0;
-					}
+		// 			&:first-child {
+		// 				padding-top: 0;
+		// 			}
 
-					input[type="submit"],
-					input[type="reset"],
-					input[type="button"],
-					button,
-					.button {
-						width: 100%;
+		// 			input[type="submit"],
+		// 			input[type="reset"],
+		// 			input[type="button"],
+		// 			button,
+		// 			.button {
+		// 				width: 100%;
 
-						&.icon {
-							&:before {
-								margin-left: -0.5em;
-							}
-						}
-					}
-				}
-			}
-		}
+		// 				&.icon {
+		// 					&:before {
+		// 						margin-left: -0.5em;
+		// 					}
+		// 				}
+		// 			}
+		// 		}
+		// 	}
+		// }
 	}
 
 /* Table */
