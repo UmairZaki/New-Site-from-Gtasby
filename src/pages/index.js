@@ -91,7 +91,7 @@ const IndexPage = () => (
           <header className="major">
             <h2>My Skills</h2>
           </header>
-          <ul className="icons-grid ">
+          <ul className="icons-grid v">
           <li >
               <span className="image">
                 <img src={pic08}  height="100px" width="auto"  alt="" />
@@ -323,21 +323,21 @@ const IndexPage = () => (
         <span className="image fit primary">
           <img src={sections[2].bg} alt="" />
         </span>
-        <div className="content ">
+        <div className="content l">
           <header className="major">
             <h2>My Achivements</h2>
           </header>
          <h3>Microsoft Technology Associate</h3>
-         <h4>Introduction to Programming using Python</h4>
+         <h6>Introduction to Programming using Python</h6>
          <p>I had passed the Microsoft Technology Associate Certificate (MTA-98-381) Introduction to programming using Python with 89% marks on August 23, 2019.</p>
         
         <span className="image a">
                 <img src={pic50}  alt="" />
               </span>
-              </div>
-              <div>
+              </div >
+              <div className="l">
         <h3>Coursera Certificate</h3>
-         <h4>Coursera Certificate</h4>
+         <h6>AI For Everyone deeplearning.ai</h6>
          <p>I had passed the Corsera Certificate (deeplearning.ai) AI For Everyone with 93% marks on July 12, 2019. Verify at coursera.org/verify/YHQEDEGRL7QH Coursera has confirmed the identity of this individual and their participation in the course.</p>
         <span className="image a">
                 <img src={pic51}  alt="" />
@@ -356,12 +356,12 @@ const IndexPage = () => (
         <span className="image fit primary">
           <img src={sections[3].bg} alt="" />
         </span>
-        <div className="content e">
+        <div className="content e l">
           <header className="major">
             <h2>My Work</h2>
           </header>
          <h3>Gatsby Projects</h3>
-         <h4>Web Design User Interface</h4>
+         <h6 className="l">Web Design User Interface</h6>
               <p>I design these websites with Gatsby, React, HTML5, Sass(CSS) and Java Script.<br />
                     Some of the following websites are made by me.</p>
               <h3>1- Umair Zaki New</h3>
@@ -388,7 +388,7 @@ const IndexPage = () => (
               </div>
               <div className="e">
         <h3>Python Flask Projects</h3>
-        <h4>Todo Restfull API with Unit Testing</h4>
+        <h6>Todo Restfull API with Unit Testing</h6>
                     <h3>1- GraphQl-Mongodb-API</h3>
                     <p>to see my code <a href="https://github.com/UmairZaki/GraphQl-Mongodb-API" target = "_blank"> Click Here</a></p>
                     <h3>2- PostgreSQL-Todo-APP-Unit-Testing</h3>
@@ -397,9 +397,9 @@ const IndexPage = () => (
                     <p>to see my code <a href="https://github.com/UmairZaki/Todo-APP-Unit-Testing-Mongodb" target = "_blank"> Click Here</a></p>
               </div>
 
-              <div className="e">
+              <div className="e l">
         <h3>Artificial Intelligence Projects</h3>
-        <h4>Deep Learning</h4>
+        <h6>Deep Learning</h6>
               <p>I trained the model with all following aspects:</p>
               <ul >
                 <li>Baseline Neural Network (Import Libraries, Load Data, Prepare partitions(train, test and validation data), label encoding and One hot encoding if needed, Make Model, Make Compiler, Train Model, Evaluate Model and Save Model)</li>
@@ -434,14 +434,14 @@ const IndexPage = () => (
        <h2 className="major">Upwork</h2>
       <p>to see my Upwork Profile <a href="https://www.upwork.com/freelancers/~0141d6a9695a2de52a" target = "_blank"> Click Here</a></p>
          <span className="">
-                <img src={pic39}  height="150px" width="auto"  alt="" />
+                <img src={pic39}  height="100px" width="auto"  alt="" />
               </span>
        </div>
        <div className="e">
        <h2 className="major">Fiverr</h2>
       <p>to see my Fiverr Profile <a href="https://www.upwork.com/freelancers/~0141d6a9695a2de52a" target = "_blank"> Click Here</a></p>
          <span className="">
-                <img src={pic41}  height="150px" width="auto"  alt="" />
+                <img src={pic41}  height="100px" width="auto"  alt="" />
               </span>
        </div>
        <Scroll type="id" element="footer">
